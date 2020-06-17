@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         git 'https://github.com/jhpope/telegraf.git'
+        tool 'Go'
       }
     }
 
