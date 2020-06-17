@@ -5,7 +5,7 @@ pipeline {
       steps {
         git 'https://github.com/jhpope/telegraf.git'
         tool 'Go'
-        sh 'make'
+        sh 'make --version'
       }
     }
 
