@@ -1,9 +1,9 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Build') {
       steps {
-        sh 'make'
+        git 'https://github.com/jhpope/telegraf.git'
       }
     }
 
